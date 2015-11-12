@@ -1,7 +1,9 @@
 <?php
 
+include 'conn-rir.php';
 
-$connect = odbc_connect("EDINAImports", "delsemore", "Edina1210"); 
+
+$connect = odbc_connect("EDINAImports", $username  , $password ); 
 
 //$connect = odbc_connect("Amorgos32", "", ""); //local DSN
 
